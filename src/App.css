@@ -1,8 +1,17 @@
-.App {
-  text-align: center;
-}
+/* .App {
+    border-width: 3px;
+    border-style: ridge;
+    border-color: red;
+    text-align: center;
+    width: auto;
+  } */
 
 .App-logo {
+  border-width: 3px;
+  border-style: ridge;
+  border-color: red;
+  text-align: center;
+  width: auto;
   height: 40vmin;
   pointer-events: none;
 }
@@ -15,9 +24,9 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 25vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -27,7 +36,26 @@
 .App-link {
   color: #61dafb;
 }
-
+.pokemon-movies-container {
+  /* list-style: none; */
+  border: red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: auto;
+  align-items: flex-start;
+  row-gap: 15px;
+  column-gap: 20px;
+}
+.pokemon-movies-container > li {
+  list-style: none;
+  color: black;
+  border-width: 1px;
+  padding: 3px;
+  border-style: ridge;
+  border-color: blue;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
